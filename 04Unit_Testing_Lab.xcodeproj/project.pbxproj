@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		ECF31C2223184EBE00066CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C2123184EBE00066CA4 /* AppDelegate.swift */; };
-		ECF31C2423184EBE00066CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C2323184EBE00066CA4 /* ViewController.swift */; };
 		ECF31C2723184EBE00066CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C2523184EBE00066CA4 /* Main.storyboard */; };
 		ECF31C2923184EBF00066CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C2823184EBF00066CA4 /* Assets.xcassets */; };
 		ECF31C2C23184EBF00066CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C2A23184EBF00066CA4 /* LaunchScreen.storyboard */; };
 		ECF31C3723184EBF00066CA4 /* _4Unit_Testing_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C3623184EBF00066CA4 /* _4Unit_Testing_LabTests.swift */; };
+		ECF31C432318517400066CA4 /* jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C422318517400066CA4 /* jokes.json */; };
+		ECF31C452318519300066CA4 /* starwars.json in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C442318519300066CA4 /* starwars.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		ECF31C1E23184EBD00066CA4 /* 04Unit_Testing_Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 04Unit_Testing_Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF31C2123184EBE00066CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECF31C2323184EBE00066CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECF31C2623184EBE00066CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECF31C2823184EBF00066CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF31C2B23184EBF00066CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		ECF31C3223184EBF00066CA4 /* 04Unit_Testing_LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 04Unit_Testing_LabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF31C3623184EBF00066CA4 /* _4Unit_Testing_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4Unit_Testing_LabTests.swift; sourceTree = "<group>"; };
 		ECF31C3823184EBF00066CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF31C422318517400066CA4 /* jokes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jokes.json; sourceTree = "<group>"; };
+		ECF31C442318519300066CA4 /* starwars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = starwars.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				ECF31C4123184ECD00066CA4 /* Supporting Files */,
-				ECF31C2323184EBE00066CA4 /* ViewController.swift */,
 				ECF31C2523184EBE00066CA4 /* Main.storyboard */,
+				ECF31C422318517400066CA4 /* jokes.json */,
+				ECF31C442318519300066CA4 /* starwars.json */,
 				ECF31C2823184EBF00066CA4 /* Assets.xcassets */,
 				ECF31C2D23184EBF00066CA4 /* Info.plist */,
 			);
@@ -186,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF31C2C23184EBF00066CA4 /* LaunchScreen.storyboard in Resources */,
+				ECF31C452318519300066CA4 /* starwars.json in Resources */,
 				ECF31C2923184EBF00066CA4 /* Assets.xcassets in Resources */,
+				ECF31C432318517400066CA4 /* jokes.json in Resources */,
 				ECF31C2723184EBE00066CA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF31C2423184EBE00066CA4 /* ViewController.swift in Sources */,
 				ECF31C2223184EBE00066CA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
