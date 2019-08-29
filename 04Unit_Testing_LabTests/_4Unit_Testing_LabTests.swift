@@ -29,7 +29,6 @@ class _4Unit_Testing_LabTests: XCTestCase {
     func testCountJokes() {
         let data = getJokesFromJSON()
         let jokes = Joke.getJokes(from: data)
-        print(jokes.count)
         XCTAssertTrue(jokes.count == 10, "not working")
     }
     

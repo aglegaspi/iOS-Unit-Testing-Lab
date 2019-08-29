@@ -20,4 +20,5 @@ struct Joke: Codable {
             fatalError("Not able to decode: \(error)")
         }
     }
+    
 }

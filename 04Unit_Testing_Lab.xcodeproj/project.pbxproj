@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC50C8872318827C0033E75F /* JokeDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC50C8862318827C0033E75F /* JokeDetailedViewController.swift */; };
 		ECF31C2223184EBE00066CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C2123184EBE00066CA4 /* AppDelegate.swift */; };
 		ECF31C2723184EBE00066CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C2523184EBE00066CA4 /* Main.storyboard */; };
 		ECF31C2923184EBF00066CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C2823184EBF00066CA4 /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 		ECF31C452318519300066CA4 /* starwars.json in Resources */ = {isa = PBXBuildFile; fileRef = ECF31C442318519300066CA4 /* starwars.json */; };
 		ECF31C4723186BB800066CA4 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C4623186BB800066CA4 /* Joke.swift */; };
 		ECF31C4823186E8B00066CA4 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C4623186BB800066CA4 /* Joke.swift */; };
+		ECF31C4A231870EC00066CA4 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C49231870EC00066CA4 /* JokesViewController.swift */; };
+		ECF31C4B231870EF00066CA4 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C49231870EC00066CA4 /* JokesViewController.swift */; };
+		ECF6C54C23188603007FC1F0 /* JokeDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC50C8862318827C0033E75F /* JokeDetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC50C8862318827C0033E75F /* JokeDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailedViewController.swift; sourceTree = "<group>"; };
 		ECF31C1E23184EBD00066CA4 /* 04Unit_Testing_Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 04Unit_Testing_Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF31C2123184EBE00066CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF31C2623184EBE00066CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +46,7 @@
 		ECF31C422318517400066CA4 /* jokes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jokes.json; sourceTree = "<group>"; };
 		ECF31C442318519300066CA4 /* starwars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = starwars.json; sourceTree = "<group>"; };
 		ECF31C4623186BB800066CA4 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		ECF31C49231870EC00066CA4 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				ECF31C2523184EBE00066CA4 /* Main.storyboard */,
 				ECF31C422318517400066CA4 /* jokes.json */,
 				ECF31C4623186BB800066CA4 /* Joke.swift */,
+				ECF31C49231870EC00066CA4 /* JokesViewController.swift */,
+				EC50C8862318827C0033E75F /* JokeDetailedViewController.swift */,
 				ECF31C442318519300066CA4 /* starwars.json */,
 				ECF31C2823184EBF00066CA4 /* Assets.xcassets */,
 				ECF31C2D23184EBF00066CA4 /* Info.plist */,
@@ -215,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF31C4723186BB800066CA4 /* Joke.swift in Sources */,
+				ECF31C4A231870EC00066CA4 /* JokesViewController.swift in Sources */,
+				EC50C8872318827C0033E75F /* JokeDetailedViewController.swift in Sources */,
 				ECF31C2223184EBE00066CA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF31C4823186E8B00066CA4 /* Joke.swift in Sources */,
+				ECF31C4B231870EF00066CA4 /* JokesViewController.swift in Sources */,
+				ECF6C54C23188603007FC1F0 /* JokeDetailedViewController.swift in Sources */,
 				ECF31C3723184EBF00066CA4 /* _4Unit_Testing_LabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

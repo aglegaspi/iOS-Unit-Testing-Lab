@@ -44,7 +44,7 @@
         <!--Jokes View Controller-->
         <scene sceneID="TWe-xW-o3u">
             <objects>
-                <viewController id="Uw5-9C-3u4" userLabel="Jokes View Controller" sceneMemberID="viewController">
+                <viewController id="Uw5-9C-3u4" userLabel="Jokes View Controller" customClass="JokesViewController" customModule="_4Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gIC-KR-rCx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,17 +54,17 @@
                                 <color key="backgroundColor" red="1" green="0.7840901415" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.7840901415" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JokeCell" textLabel="pqr-5a-x4A" style="IBUITableViewCellStyleDefault" id="Zua-jO-VmA">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JokeCell" textLabel="pqr-5a-x4A" rowHeight="75" style="IBUITableViewCellStyleDefault" id="Zua-jO-VmA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zua-jO-VmA" id="QTy-ih-uks">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pqr-5a-x4A">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="74.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -72,6 +72,9 @@
                                             <color key="backgroundColor" red="1" green="0.7840901415" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.7840901415" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="7Hg-Tm-MMv" kind="show" identifier="JokeCell" id="Dh0-qt-ARi"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -86,6 +89,9 @@
                         <viewLayoutGuide key="safeArea" id="Iq4-EO-jrL"/>
                     </view>
                     <navigationItem key="navigationItem" id="DUu-xF-ZIZ"/>
+                    <connections>
+                        <outlet property="jokesTableView" destination="CpZ-Hk-5ZO" id="MX0-2J-S6Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xd2-TP-qe8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,17 +157,40 @@
         <!--Jokes Detail View Controller-->
         <scene sceneID="OJm-Fh-BvT">
             <objects>
-                <viewController id="7Hg-Tm-MMv" userLabel="Jokes Detail View Controller" sceneMemberID="viewController">
+                <viewController id="7Hg-Tm-MMv" userLabel="Jokes Detail View Controller" customClass="JokeDetailedViewController" customModule="_4Unit_Testing_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0t3-Xl-9YL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="setup" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IZB-vT-6um">
+                                <rect key="frame" x="29" y="121" width="357" height="118"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="punchline" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YNI-hd-FGe">
+                                <rect key="frame" x="29" y="247" width="357" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.7840901415" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IZB-vT-6um" firstAttribute="leading" secondItem="33a-YX-8cb" secondAttribute="leading" constant="29" id="AKc-gv-FAu"/>
+                            <constraint firstItem="33a-YX-8cb" firstAttribute="bottom" secondItem="IZB-vT-6um" secondAttribute="bottom" constant="574" id="MSD-el-AW9"/>
+                            <constraint firstItem="33a-YX-8cb" firstAttribute="trailing" secondItem="IZB-vT-6um" secondAttribute="trailing" constant="28" id="rF7-hC-ZoL"/>
+                            <constraint firstItem="IZB-vT-6um" firstAttribute="top" secondItem="33a-YX-8cb" secondAttribute="top" constant="33" id="zh8-mn-zw7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="33a-YX-8cb"/>
                     </view>
+                    <connections>
+                        <outlet property="punchlineOutlet" destination="YNI-hd-FGe" id="xz4-dO-gff"/>
+                        <outlet property="setupOutlet" destination="IZB-vT-6um" id="4FF-k0-kam"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axg-RK-nW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1541" y="-605"/>
+            <point key="canvasLocation" x="1540.5797101449277" y="-605.35714285714278"/>
         </scene>
     </scenes>
 </document>
