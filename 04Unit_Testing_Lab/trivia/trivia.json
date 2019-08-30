@@ -1,0 +1,121 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "Super%20Mario%20Bros.%20was%20released%20in%201990.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Geography",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20are%20the%20four%20corner%20states%20of%20the%20US%3F",
+            "correct_answer": "Utah%2C%20Colorado%2C%20Arizona%2C%20New%20Mexico",
+            "incorrect_answers": [
+                "Oregon%2C%20Idaho%2C%20Nevada%2C%20Utah",
+                "Kansas%2C%20Oklahoma%2C%20Arkansas%2C%20Louisiana",
+                "South%20Dakota%2C%20Minnesota%2C%20Nebraska%2C%20Iowa"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Neptune%27s%20greek%20name%20was...",
+            "correct_answer": "Poseidon",
+            "incorrect_answers": [
+                "Ares",
+                "Zeus",
+                "Apollo"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Music",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which%20of%20these%20songs%20by%20Skrillex%20features%20Fatman%20Scoop%20as%20a%20side%20artist%3F",
+            "correct_answer": "Recess",
+            "incorrect_answers": [
+                "All%20is%20Fair%20in%20Love%20and%20Brostep",
+                "Rock%20N%20Roll%20%28Will%20Take%20You%20to%20the%20Mountain%29",
+                "Scary%20Monsters%20and%20Nice%20Sprites"
+            ]
+        },
+        {
+            "category": "Geography",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20is%20the%20largest%20lake%20in%20the%20African%20continent%3F",
+            "correct_answer": "Lake%20Victoria",
+            "incorrect_answers": [
+                "Lake%20Tanganyika",
+                "Lake%20Malawi",
+                "Lake%20Turkana"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Film",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who%20played%20Sgt.%20Gordon%20Elias%20in%20%27Platoon%27%20%281986%29%3F",
+            "correct_answer": "Willem%20Dafoe",
+            "incorrect_answers": [
+                "Charlie%20Sheen",
+                "Matt%20Damon",
+                "Johnny%20Depp"
+            ]
+        },
+        {
+            "category": "History",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "The%20Hundred%20Years%27%20War%20was%20fought%20for%20more%20than%20a%20hundred%20years.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In%20the%20Mass%20Effect%20trilogy%2C%20who%20is%20the%20main%20protagonist%3F",
+            "correct_answer": "Shepard",
+            "incorrect_answers": [
+                "Mordin",
+                "Garrus",
+                "Thane"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Film",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "According%20to%20%22Star%20Wars%22%20lore%2C%20which%20planet%20does%20Obi-Wan%20Kenobi%20come%20from%3F",
+            "correct_answer": "Stewjon",
+            "incorrect_answers": [
+                "Alderaan",
+                "Tatooine",
+                "Naboo"
+            ]
+        },
+        {
+            "category": "Geography",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "How%20many%20independent%20countries%20are%20there%20within%20the%20continent%20of%20South%20America%3F",
+            "correct_answer": "12",
+            "incorrect_answers": [
+                "8",
+                "9",
+                "10"
+            ]
+        }
+    ]
+}
