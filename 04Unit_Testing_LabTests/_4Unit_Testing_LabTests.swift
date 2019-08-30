@@ -55,6 +55,12 @@ class _4Unit_Testing_LabTests: XCTestCase {
         XCTAssert(trivia.count == 10, "not working")
     }
     
+    func testTriviaStringCleanUp() {
+        //let data = getTriviaFromJSON()
+        //let trivia = Trivia.getTrivia(from: data)
+        XCTAssert(Trivia.convertString("HELLO%20THERE") == "HELLO THERE", "not working")
+    }
+    
     private func getJokesFromJSON() -> Data {
         guard let pathToData = Bundle.main.path(forResource: "jokes", ofType: "json") else {
             fatalError("Could not find JSON")

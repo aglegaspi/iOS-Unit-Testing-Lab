@@ -25,4 +25,8 @@ struct Trivia: Codable {
             fatalError("Not able to generate data from JSON")
         }
     }
+    
+    static func convertString(_ str: String) -> String {
+        return str.replacingOccurrences(of: "%20", with: " ")
+    }
 }
