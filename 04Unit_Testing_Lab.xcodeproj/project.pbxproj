@@ -20,6 +20,7 @@
 		ECF31C4A231870EC00066CA4 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C49231870EC00066CA4 /* JokesViewController.swift */; };
 		ECF31C4B231870EF00066CA4 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF31C49231870EC00066CA4 /* JokesViewController.swift */; };
 		ECF6C54C23188603007FC1F0 /* JokeDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC50C8862318827C0033E75F /* JokeDetailedViewController.swift */; };
+		ECF6C54E23195591007FC1F0 /* StarWarsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6C54D23195591007FC1F0 /* StarWarsMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ECF31C442318519300066CA4 /* starwars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = starwars.json; sourceTree = "<group>"; };
 		ECF31C4623186BB800066CA4 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		ECF31C49231870EC00066CA4 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
+		ECF6C54D23195591007FC1F0 /* StarWarsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				ECF31C4623186BB800066CA4 /* Joke.swift */,
 				ECF31C49231870EC00066CA4 /* JokesViewController.swift */,
 				EC50C8862318827C0033E75F /* JokeDetailedViewController.swift */,
+				ECF6C54D23195591007FC1F0 /* StarWarsMovie.swift */,
 				ECF31C442318519300066CA4 /* starwars.json */,
 				ECF31C2823184EBF00066CA4 /* Assets.xcassets */,
 				ECF31C2D23184EBF00066CA4 /* Info.plist */,
@@ -225,6 +228,7 @@
 				ECF31C4723186BB800066CA4 /* Joke.swift in Sources */,
 				ECF31C4A231870EC00066CA4 /* JokesViewController.swift in Sources */,
 				EC50C8872318827C0033E75F /* JokeDetailedViewController.swift in Sources */,
+				ECF6C54E23195591007FC1F0 /* StarWarsMovie.swift in Sources */,
 				ECF31C2223184EBE00066CA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
