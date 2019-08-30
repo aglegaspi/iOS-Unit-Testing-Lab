@@ -23,13 +23,24 @@ class _4Unit_Testing_LabTests: XCTestCase {
         let data = getJokesFromJSON()
         let jokes = Joke.getJokes(from: data)
         XCTAssertTrue(jokes != nil, "not working")
-        
     }
     
     func testCountJokes() {
         let data = getJokesFromJSON()
         let jokes = Joke.getJokes(from: data)
         XCTAssertTrue(jokes.count == 10, "not working")
+    }
+    
+    func testLoadStarWarsFilms() {
+        let data = getStarWarsFilmsFromJSON()
+        let episodes = Episode.getEpisode(from: data)
+        XCTAssert(episodes != nil, "not able to load data.")
+    }
+    
+    func testStarWarsEpisodeCount() {
+        let data = getStarWarsFilmsFromJSON()
+        let episodes = Episode.getEpisode(from: data)
+        XCTAssertTrue(episodes.count == 7, "not working")
     }
     
     private func getJokesFromJSON() -> Data {
@@ -45,6 +56,20 @@ class _4Unit_Testing_LabTests: XCTestCase {
             fatalError("path to json not working: \(error)")
         }
         
+    }
+    
+    private func getStarWarsFilmsFromJSON() -> Data {
+        guard let pathToData = Bundle.main.path(forResource: "starwars", ofType: "json") else {
+            fatalError("Could Not Find JSON")
+        }
+        let url = URL(fileURLWithPath: pathToData)
+        
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch {
+            fatalError("path to JSON error: \(error)")
+        }
     }
 
     
